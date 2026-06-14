@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN") or os.getenv("BOT_TOKEN")
 OLYMPUS_TOKEN = os.getenv("OLYMPUS_TOKEN")
 GANG_ID = os.getenv("GANG_ID", "54347")
 
